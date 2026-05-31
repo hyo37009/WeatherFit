@@ -16,7 +16,7 @@ public class AiConfig {
 
     @Value("${spring.ai.openai.api-key}")
     private String OPENROUTER_API_KEY;
-    @Value("${spring.ai.openai.baseurl}")
+    @Value("${spring.ai.openai.base-url}")
     private String OPENAI_BASE_URL;
     @Value("${spring.ai.openai.chat.options.model}")
     private String MODEL;
