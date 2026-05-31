@@ -9,6 +9,11 @@ group = 'com.codeit'
 version = '0.0.1-SNAPSHOT'
 description = 'WeatherFit'
 
+// 일반 jar(-plain.jar) 생성 비활성화 → bootJar 하나만 산출되어 도커 빌드 시 모호성 제거
+jar {
+    enabled = false
+}
+
 java {
     toolchain {
         languageVersion = JavaLanguageVersion.of(21)
