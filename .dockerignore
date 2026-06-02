@@ -1,0 +1,32 @@
+# 빌드 산출물 (이미지 안에서 새로 빌드하므로 제외)
+build/
+out/
+bin/
+
+# Gradle 캐시
+.gradle/
+
+# IDE
+.idea/
+*.iml
+.vscode/
+
+# 버전 관리
+.git/
+.gitignore
+.gitattributes
+
+# 로그 & 시크릿 (런타임에 env_file로 주입하므로 이미지에 넣지 않음)
+logs/
+*.log
+.env
+
+# 도커 관련 (빌드 컨텍스트에 불필요)
+docker-compose*.yml
+Dockerfile*
+.dockerignore
+
+# 문서 / OS 파일
+*.md
+.DS_Store
+Thumbs.db
